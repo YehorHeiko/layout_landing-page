@@ -1,4 +1,59 @@
-.header_nav-phone-image{
-  width: 32px;
-  height: 32px;
+@import '../variables/variables';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-spacing {
+  padding: 80px 0;
+
+  @media (min-width: 768px) {
+    padding: 120px 0;
+  }
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/fon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    @media (min-width: 768px) {
+      padding: 50px 0;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 32px;
+
+    @media (min-width: 768px) {
+      gap: 55px;
+    }
+  }
+
+  &__title {
+    margin: 80px 0 0;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 80px;
+    }
+  }
 }

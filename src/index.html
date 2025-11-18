@@ -2,226 +2,256 @@
 <html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Landing Page</title>
-    <link
-      rel="stylesheet"
-      href="./styles/main.scss"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The MET - Museum Landing Page</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" >
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script
-      src="scripts/main.js"
-      defer
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
   </head>
-  <body class="page_body">
-    <header class="header">
-      <div class="header_top">
-        <div class="header_top-title">
-          <a href="#">
-            THE <br> MET
-          </a>
+  <body class="page__body">
+    <!-- Header -->
+    <header class="header" id="home">
+      <div class="container">
+        <div class="header__top">
+          <a href="#" class="logo">THE <br> MET</a>
+          <div class="header__controls">
+            <a href="tel:+12125357710" class="icon icon--phone"
+            aria-label="Call us"></a>
+            <a href="#menu" class="icon icon--burger"
+            aria-label="Open menu"></a>
+          </div>
         </div>
-        <div class="header_top-left-bar">
-          <a href="#" class="icon header_top-left-bar-phone-image"></a>
-          <a href="#menu" class="icon header_top-left-bar-burger-image"></a>
-        </div>
-      </div>
-      <div class="header_title">
-        <h1 class="header_title-text">Welcome <br> to The MET</h1>
+        <h1 class="header__title">Welcome <br> to The MET</h1>
       </div>
     </header>
-    <aside class="menu page_menu"  id="menu">
-      <div class="menu_top">
-        <div class="menu_top-title">
-          <a href="#">
-            THE <br> MET
-          </a>
+
+    <!-- Menu -->
+    <nav class="menu" id="menu">
+      <div class="container">
+        <div class="menu__top">
+          <a href="#" class="logo">THE <br> MET</a>
+          <a href="#" class="icon icon--close"
+          aria-label="Close menu"></a>
         </div>
-        <div class="menu_top-left-bar">
-          <a href="#" class="icon menu_top-left-bar-close-image"></a>
-        </div>
-      </div>
-      <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_list_item">
-            <a class="nav_list_item_link" href="#Home">Home</a>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#home">Home</a>
           </li>
-          <li class="nav_list_item">
-            <a class="nav_list_item_link" href="#About">About Us</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">About Us</a>
           </li>
-          <li class="nav_list_item">
-            <a class="nav_list_item_link" href="#Gallery">Gallery</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#gallery">Gallery</a>
           </li>
-          <li class="nav_list_item">
-            <a class="nav_list_item_link" href="#Explore">Explore Online</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#explore">Explore Online</a>
           </li>
-          <li class="nav_list_item">
-            <a class="nav_list_item_link" href="#Contacts">Contacts</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Contacts</a>
           </li>
         </ul>
-      </nav>
-      <div class="menu_bottom">
-        <h1 class="menu_bottom_title">The Met Fifth Avenue</h1>
-        <a class="menu_bottom_link" href="#con">+1 212-535-7710</a>
-        <h1 class="menu_bottom_title">The Met Cloisters</h1>
-        <a class="menu_bottom_link"href="#tel">+1 212-923-3700</a>
-        <a class="menu_bottom_title menu_bottom_call-to-order" href="#">call to order</a>
-      </div>
 
-    </aside>
-    <main>
-      <section class="first_section">
-        <div class="first_section_title">
-          <div class="first_section_left">
-            <span class="first_section_left-plan-visit">Plan your visit</span>
-            <h1 class="first_section_left-museum">Museum hours</h1>
+        <div class="menu__contacts">
+          <div class="menu__contact-block">
+            <h3 class="menu__contact-title">The Met Fifth Avenue</h3>
+            <a class="menu__contact-link" href="tel:+12125357710">+1 212-535-7710</a>
           </div>
-          <div class="first_section_right">
-            <div class="first_section_right_block">
-              <h1 class="first_section_right_block_title">The Met Fifth Avenue</h1>
-              <div class="first_section_right_block_time">
-                <div class="first_section_right_block_time_test">
-                  <span>10 am - 5 pm</span>
-                  <span>10 am - 9 pm</span>
-                  <span>Closed</span>
+          <div class="menu__contact-block">
+            <h3 class="menu__contact-title">The Met Cloisters</h3>
+            <a class="menu__contact-link" href="tel:+12129233700">+1 212-923-3700</a>
+          </div>
+          <a class="menu__cta" href="#contacts">Call to order</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="hours" id="about">
+        <div class="container">
+          <div class="hours__wrapper">
+            <div class="hours__header">
+              <p class="hours__subtitle">Plan your visit</p>
+              <h2 class="hours__title">Museum hours</h2>
+            </div>
+
+            <div class="hours__content">
+              <div class="hours__block">
+                <h3 class="hours__location">The Met Fifth Avenue</h3>
+                <div class="hours__schedule">
+                  <div class="hours__times">
+                    <span>10 am - 5 pm</span>
+                    <span>10 am - 9 pm</span>
+                    <span>Closed</span>
+                  </div>
+                  <div class="hours__days">
+                    <span>Sun, Mon, Tue, Thu</span>
+                    <span>Fri, Sat</span>
+                    <span>Wed</span>
+                  </div>
                 </div>
-                <div class="first_section_right_block_time_days">
-                  <span>Sun, Mon, Tue, Thu</span>
-                  <span>Fri, Sat</span>
-                  <span>Wen</span>
-                </div>
+                <h4 class="hours__closed-title">Closed on</h4>
+                <p class="hours__closed-text">Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.</p>
               </div>
-              <h1 class="first_section_title-closed-on">Closed on</h1>
-              <span class="first_section_title-Thanksgiving">Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.</span>
-              <div>
-                <h1>The Met Cloisters</h1>
-                <div>
-                  <span>10 am – 4.30 pm</span>
-                  <span>Closed</span>
+
+              <div class="hours__block">
+                <h3 class="hours__location">The Met Cloisters</h3>
+                <div class="hours__schedule">
+                  <div class="hours__times">
+                    <span>10 am – 4:30 pm</span>
+                    <span>Closed</span>
+                  </div>
+                  <div class="hours__days">
+                    <span>Thu - Tue</span>
+                    <span>Wed</span>
+                  </div>
                 </div>
-                <div>
-                  <span>Thu - Tue</span>
-                  <span>Wen</span>
-                </div>
+                <h4 class="hours__closed-title">Closed on</h4>
+                <p class="hours__closed-text">Thanksgiving Day, Dec 25, Jan 1</p>
               </div>
-              <h1 class="first_section_title-closed-on">Closed on</h1>
-              <span class="first_section_title-closed-on">Thanksgiving Day, Dec 25, Jan 1</span>
             </div>
           </div>
-
         </div>
       </section>
-      <section class="second_section">
-        <div class="second_section_name">
-          <h1>Now On View</h1>
-          <span>Explore exhibition gallery guides, <br> videos, articles, and more.</span>
-        </div>
 
-        <article class="second_section_blocks-first">
-          <div>
-            <img src="./img/image-1-second.png" alt="foto">
-            <img src="./img/image-2-second.png" alt="foto">
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="gallery__header">
+            <h2 class="gallery__title">Now On View</h2>
+            <p class="gallery__subtitle">Explore exhibition gallery guides, <br> videos, articles, and more.</p>
           </div>
-          <div class="second_section_block_first-name">
-            <span>A New Look at Old Masters</span>
-            <span>December 12, 2020 – Through Spring 2023</span>
-          </div>
-        </article>
 
-        <article class="second_section_blocks-second">
-          <div class="second_section_blocks-second-img">
-            <img src="./img/image-3-second.png" alt="foto">
-            <img src="./img/image-4-second.png" alt="foto">
-            <img src="./img/image-5-second.png" alt="foto">
-          </div>
-          <div>
-            <span> Bodhisattvas of Wisdom, Compassion, and Power</span>
-            <span>March 27, 2021 – October 30, 2022</span>
-          </div>
-        </article>
-        <article>
-          <div class="second_section_blocks-fird-img">
-            <img src="./img/image-6-second.png" alt="foto">
-            <img src="./img/image-7-second.png" alt="foto">
-          </div>
-          <div>
-            <span>Inspiring Walt Disney: The Animation of French Decorative Arts</span>
-            <span>December 10, 2021 – March 6, 2022</span>
-          </div>
-        </article>
+          <div class="gallery__grid">
+            <article class="exhibition">
+              <div class="exhibition__images exhibition__images-first ">
+                <img class="exhibition__image exhibition__image-first" src="./img/image-1-second.png"
+                alt="A New Look at Old Masters exhibition">
+                <img class="exhibition__image exhibition__image-second" src="./img/image-2-second.png"
+                alt="Old Masters artwork detail">
+              </div>
+              <div class="exhibition__info">
+                <h3 class="exhibition__name">A New Look at Old Masters</h3>
+                <p class="exhibition__date">December 12, 2020 – Through Spring 2023</p>
+              </div>
+            </article>
 
-        <button>View all exhibitions</button>
-      </section>
-      <section class="third_section">
-        <h1>More to Explore Online</h1>
-        <div class="third_section_info">
-          <article class="bottom">
-            <img src="./img/image-1-last.png" alt="image">
-            <h1>Collection Areas</h1>
-            <span>These collection areas study, exhibit, and care for the objects in The Met collection.</span>
-          </article>
-          <article>
-            <img src="./img/image-2-last.png" alt="image">
-            <h1>Travel</h1>
-            <span>Travel with The Met connects the Museum's wide and diverse audience to art, inspiration, and historical perspective.</span>
-          </article>
-          <article>
-            <img src="./img/image-3-last.png" alt="image">
-            <h1>Virtual group tours</h1>
-            <span>
-              Request a guided tour, reserve admission and lead your own small group, or request a live virtual tour led by a Museum guide.
-            </span>
-          </article>
+            <article class="exhibition">
+              <div class="exhibition__images exhibition__images--triple">
+                <img class="exhibition__image" src="./img/image-3-second.png"
+                alt="Bodhisattvas exhibition">
+                <img class="exhibition__image" src="./img/image-4-second.png"
+                alt="Bodhisattvas artwork">
+                <img class="exhibition__image" src="./img/image-5-second.png"
+                alt="Bodhisattvas sculpture">
+              </div>
+              <div class="exhibition__info">
+                <h3 class="exhibition__name">Bodhisattvas of Wisdom, Compassion, and Power</h3>
+                <p class="exhibition__date">March 27, 2021 – October 30, 2022</p>
+              </div>
+            </article>
 
+            <article class="exhibition">
+              <div class="exhibition__images exhibition__images-last">
+                <img class="exhibition__image exhibition__image-down-f" src="./img/image-6-second.png"
+                alt="Walt Disney exhibition">
+                <img class="exhibition__image exhibition__image-down-s" src="./img/image-7-second.png"
+                alt="French Decorative Arts">
+              </div>
+              <div class="exhibition__info">
+                <h3 class="exhibition__name">Inspiring Walt Disney: The Animation of French Decorative Arts</h3>
+                <p class="exhibition__date">December 10, 2021 – March 6, 2022</p>
+              </div>
+            </article>
+          </div>
+
+          <button class="gallery__button btn">View all exhibitions</button>
         </div>
       </section>
-      <section class="last_section">
-        <h1> Contact us</h1>
-        <div>
-          <div>
-            <span>
-              The Met Fifth Avenue
-            </span>
-            <span>Phone</span>
-            <span>+1 212-535-7710</span>
-            <span>Address</span>
-            <span>1000 Fifth Avenue
-              New York, NY 10028
-            </span>
+
+      <section class="explore" id="explore">
+        <div class="container">
+          <h2 class="explore__title">More to Explore Online</h2>
+          <div class="explore__grid">
+            <article class="explore-card">
+              <img class="explore-card__image" src="./img/image-1-last.png"
+              alt="Collection Areas">
+              <h3 class="explore-card__title">Collection Areas</h3>
+              <p class="explore-card__text">These collection areas study, exhibit, and care for the objects in The Met collection.</p>
+            </article>
+
+            <article class="explore-card">
+              <img class="explore-card__image" src="./img/image-2-last.png"
+               alt="Travel">
+              <h3 class="explore-card__title">Travel</h3>
+              <p class="explore-card__text">Travel with The Met connects the Museum's wide and diverse audience to art, inspiration, and historical perspective.</p>
+            </article>
+
+            <article class="explore-card">
+              <img class="explore-card__image" src="./img/image-3-last.png"
+              alt="Virtual group tours">
+              <h3 class="explore-card__title">Virtual Group Tours</h3>
+              <p class="explore-card__text">Request a guided tour, reserve admission and lead your own small group, or request a live virtual tour led by a Museum guide.</p>
+            </article>
           </div>
-          <div>
-            <span>The Met Cloisters</span>
-            <span>Phone</span>
-            <span>+1 212-923-3700</span>
-            <span>Address</span>
-            <span>99 Margaret Corbin Drive
-              Fort Tryon Park
-              New York, NY 10040
-            </span>
-          </div>
-          <div>
-            <form action="as">
-              <label for="fname">Name:</label><br>
-              <input type="text" id="fname"
-               name="fname"><br>
-              <label for="fname">Email:</label><br>
-              <input type="text" id="d"
-              name="fname"><br>
-              <label for="fname">Message</label><br>
-              <input type="text" id="asd"
-               name="fname"><br>
-              <input type="submit" value="Submit">
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Contact Us</h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__info">
+              <div class="contact-block">
+                <h3 class="contact-block__title">The Met Fifth Avenue</h3>
+                <div class="contact-block__item">
+                  <span class="contact-block__label">Phone</span>
+                  <a class="contact-block__link" href="tel:+12125357710">+1 212-535-7710</a>
+                </div>
+                <div class="contact-block__item">
+                  <span class="contact-block__label">Address</span>
+                  <address class="contact-block__address">
+                    1000 Fifth Avenue<br>
+                    New York, NY 10028
+                  </address>
+                </div>
+              </div>
+
+              <div class="contact-block">
+                <h3 class="contact-block__title">The Met Cloisters</h3>
+                <div class="contact-block__item">
+                  <span class="contact-block__label">Phone</span>
+                  <a class="contact-block__link" href="tel:+12129233700">+1 212-923-3700</a>
+                </div>
+                <div class="contact-block__item">
+                  <span class="contact-block__label">Address</span>
+                  <address class="contact-block__address">
+                    99 Margaret Corbin Drive<br>
+                    Fort Tryon Park<br>
+                    New York, NY 10040
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" action="#"
+            method="POST">
+              <input class="contact-form__input" type="text"
+              name="name" placeholder="Name"
+              required>
+              <input class="contact-form__input" type="email"
+              name="email" placeholder="Email"
+              required>
+              <textarea class="contact-form__textarea" name="message"
+              placeholder="Message" required></textarea>
+              <button class="contact-form__button btn" type="submit">Send</button>
             </form>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer"></footer>
   </body>
 </html>
