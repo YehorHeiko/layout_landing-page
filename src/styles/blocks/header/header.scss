@@ -57,3 +57,49 @@
     }
   }
 }
+
+.header__phone {
+  position: relative;
+
+  .header__controls-hover-links-block {
+    position: absolute;
+    top: -50px;
+    right: 35px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+    z-index: 10;
+    width: max-content;
+    align-items: end;
+
+  }
+
+  .header__controls-hover-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0 0 ;
+    transition: color 0.3s ease;
+
+    font-family: $font-primary;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 27px;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #e6e6e6;
+    }
+  }
+
+  &:hover .header__controls-hover-links-block {
+    visibility: visible;
+    opacity: 1;
+  }
+}

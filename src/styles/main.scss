@@ -35,6 +35,11 @@
   }
 }
 
+.page__body:has(.menu:target) {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -97,7 +102,6 @@
   font-family: $font-primary;
   font-weight: 700;
   font-size: 16px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   color: $color-white;
   background-color: $color-primary;
@@ -109,6 +113,10 @@
     background-color: transparent;
     color: $color-primary;
   }
+  
+  // @media (min-width: 768px) {
+  //   width: auto;
+  // }
 }
 
 .contact-block {
@@ -151,6 +159,8 @@
     font-style: normal;
     font-size: 16px;
     line-height: 1.6;
+    text-decoration: none;
+    color: $color-grey;
   }
 }
 

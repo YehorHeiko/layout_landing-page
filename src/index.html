@@ -18,8 +18,16 @@
         <div class="header__top">
           <a href="#" class="logo">THE <br> MET</a>
           <div class="header__controls">
-            <a href="tel:+12125357710" class="icon icon--phone"
-            aria-label="Call us"></a>
+            <div class="header__phone">
+              <a href="tel:+12125357710" class="icon icon--phone"
+              aria-label="Call us"></a>
+              <div class="header__controls-hover-links-block">
+                <span class="header__controls-hover-link">The Met Fifth Avenue</span>
+                <a class="header__controls-hover-link" href="tel:+1 212 535-77-10">+1 212-535-7710</a>
+                <span class="header__controls-hover-link">The Met Cloisters</span>
+                <a href="tel:+1 234 555-55-55" class="header__controls-hover-link">+1 234 555-55-55</a>
+              </div>
+            </div>
             <a href="#menu" class="icon icon--burger"
             aria-label="Open menu"></a>
           </div>
@@ -28,8 +36,9 @@
       </div>
     </header>
 
+
     <!-- Menu -->
-    <nav class="menu" id="menu">
+    <aside class="menu" id="menu">
       <div class="container">
         <div class="menu__top">
           <a href="#" class="logo">THE <br> MET</a>
@@ -67,7 +76,7 @@
           <a class="menu__cta" href="#contacts">Call to order</a>
         </div>
       </div>
-    </nav>
+    </aside>
 
     <main class="main">
       <section class="hours" id="about">
@@ -212,10 +221,10 @@
                 </div>
                 <div class="contact-block__item">
                   <span class="contact-block__label">Address</span>
-                  <address class="contact-block__address">
+                  <a class="contact-block__address" href="https://maps.app.goo.gl/UM3Bh3h9xUotvFBQ9">
                     1000 Fifth Avenue<br>
                     New York, NY 10028
-                  </address>
+                  </a>
                 </div>
               </div>
 
@@ -227,17 +236,17 @@
                 </div>
                 <div class="contact-block__item">
                   <span class="contact-block__label">Address</span>
-                  <address class="contact-block__address">
+                  <a class="contact-block__address" href="https://maps.app.goo.gl/VdKwBu7RiexcL4bL7">
                     99 Margaret Corbin Drive<br>
                     Fort Tryon Park<br>
                     New York, NY 10040
-                  </address>
+                  </a>
                 </div>
               </div>
             </div>
 
             <form class="contact-form" action="#"
-            method="POST">
+              onsubmit="this.reset(); return false;">
               <input class="contact-form__input" type="text"
               name="name" placeholder="Name"
               required>
