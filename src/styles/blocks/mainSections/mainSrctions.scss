@@ -169,9 +169,9 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 541px) {
       flex-direction: row;
       gap: 80px;
     }
@@ -179,6 +179,10 @@
 
   &__header {
     flex-shrink: 0;
+
+    @media (max-width: 768px) {
+      max-width: 227px;
+    }
   }
 
   &__subtitle {
@@ -546,7 +550,7 @@
   &__textarea {
     background-color: #f8f8fa;
     padding: 12px 16px;
-    font-family: $font-secondary;
+    font-family: $font-primary;
     border: 1px solid #ddd;
     transition: border-color $transition;
     font-weight: 400;

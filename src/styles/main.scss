@@ -3,7 +3,6 @@
 @import './blocks/mainSections/mainSrctions';
 @import './blocks/footer/footer';
 
-
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -26,7 +25,7 @@
 .page {
   margin: 0;
   padding: 0;
-  font-family: $font-secondary;
+  font-family: $font-primary;
   color: $color-black;
 
   &__body {
@@ -44,6 +43,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 0 72px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 0 20px;
+  }
 }
 
 .logo {
@@ -113,7 +120,7 @@
     background-color: transparent;
     color: $color-primary;
   }
-  
+
   // @media (min-width: 768px) {
   //   width: auto;
   // }
@@ -139,16 +146,18 @@
   &__label {
     display: block;
     margin-bottom: 4px;
-    font-weight: 700;
+    font-weight: 400;
+    font-style: Regular;
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    line-height: 27px;
   }
 
   &__link {
     font-size: 16px;
-    color: $color-primary;
+    color: $color-black;
     text-decoration: none;
+    font-weight: 700;
+    line-height: 140%;
 
     &:hover {
       text-decoration: underline;
@@ -158,9 +167,9 @@
   &__address {
     font-style: normal;
     font-size: 16px;
-    line-height: 1.6;
     text-decoration: none;
     color: $color-grey;
+    font-weight: 700;
+    line-height: 140%;
   }
 }
-
