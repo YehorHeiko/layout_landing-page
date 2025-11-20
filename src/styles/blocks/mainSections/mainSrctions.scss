@@ -390,7 +390,7 @@
       @media (min-width: 768px) {
         width: 572px;
       }
-      
+
       @media (min-width: 1150px) {
         width: 872px;
       }
@@ -570,6 +570,7 @@
   &__textarea {
     min-height: 150px;
     background-color: #f8f8fa;
+    resize: none;
   }
 
   &__button {
