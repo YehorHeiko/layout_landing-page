@@ -388,7 +388,10 @@
 
     &-first {
       @media (min-width: 768px) {
-        width: 672px;
+        width: 572px;
+      }
+      @media (min-width: 1150px) {
+        width: 872px;
       }
     }
     &-down-s {
@@ -398,7 +401,7 @@
     }
   }
   &__image:hover {
-    transform: scale(1.06);
+    transform: scale(1.03);
   }
 
   &__info {
@@ -565,7 +568,6 @@
 
   &__textarea {
     min-height: 150px;
-    resize: vertical;
     background-color: #f8f8fa;
   }
 
